@@ -49,6 +49,7 @@ public class Program
             }
             else
             {
+                Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid input");
                 Console.ForegroundColor = ConsoleColor.White;
@@ -112,6 +113,7 @@ public class Board(int Size, int WinningCond)
     {
         if (slot > Size * Size || slot <= 0)
         {
+            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nNon-existent, retry");
             Console.ForegroundColor = ConsoleColor.White;
@@ -120,6 +122,7 @@ public class Board(int Size, int WinningCond)
         }
         if (Slot[slot] == "X" || Slot[slot] == "O")
         {
+            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nOccupied, retry");
             Console.ForegroundColor = ConsoleColor.White;
