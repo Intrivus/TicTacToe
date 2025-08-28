@@ -2,5 +2,7 @@
 - Entering a board size will generate a square board with sides' length of "size".
 - Entering the winning condition determine the number of consecutive "X" or "O" in a line to win (including diagonal).
 
+- Type the sum of the horizontal and vertical guide to mark a box 
+
 # The Making of
 *comming soon*
