@@ -12,3 +12,4 @@ C:\Users\Intrivus\Desktop\Programming\C#\TicTacToe\TicTacToe\obj\Debug\net9.0\re
 C:\Users\Intrivus\Desktop\Programming\C#\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.pdb
 C:\Users\Intrivus\Desktop\Programming\C#\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.genruntimeconfig.cache
 C:\Users\Intrivus\Desktop\Programming\C#\TicTacToe\TicTacToe\obj\Debug\net9.0\ref\TicTacToe.dll
+C:\Users\Intrivus\Desktop\Programming\C#\TicTacToe\TicTacToe\obj\Debug\net9.0\TicTacToe.sourcelink.json

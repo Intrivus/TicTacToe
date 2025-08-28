@@ -157,7 +157,9 @@ public class Board(int Size, int WinningCond)
     }
     public void Display()
     {
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"\nWinning condition: {WinningCond}");
+        Console.ForegroundColor = ConsoleColor.White;
 
         string horizontalGuide = " ";
         for (int i = 0; i < (Size * (Size - 1)).ToString().Length; i++)
