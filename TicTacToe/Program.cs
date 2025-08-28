@@ -111,9 +111,9 @@ public class Board(int Size, int WinningCond)
     }
     public string[]? UpdateBoard(int slot)
     {
+        Console.Clear();
         if (slot > Size * Size || slot <= 0)
         {
-            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nNon-existent, retry");
             Console.ForegroundColor = ConsoleColor.White;
@@ -122,7 +122,6 @@ public class Board(int Size, int WinningCond)
         }
         if (Slot[slot] == "X" || Slot[slot] == "O")
         {
-            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nOccupied, retry");
             Console.ForegroundColor = ConsoleColor.White;
@@ -130,7 +129,6 @@ public class Board(int Size, int WinningCond)
             return null;
         }
 
-        Console.Clear();
         Item = new string[Size];
 
         Slot[slot] = Turn % 2 != 0 ? "X" : "O";
