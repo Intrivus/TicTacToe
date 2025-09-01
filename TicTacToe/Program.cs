@@ -188,7 +188,7 @@ public class Board(int Size, int WinningCond)
 
     public bool Finished()
     {
-                bool won = false;
+        bool won = false;
 
         for (int y = 0; y + WinningCond <= Size; y++)
         {
