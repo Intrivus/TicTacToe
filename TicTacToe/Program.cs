@@ -34,16 +34,10 @@ public class Program
         {
             Console.Write($"Player \"{board.Whose}\": ");
 
-            // Stopwatch stopwatch = new();
-            // stopwatch.Start();
-
             if (int.TryParse(Console.ReadLine(), out int num))
             {
                 board.UpdateBoard(num);
                 board.Display();
-
-                // stopwatch.Stop();
-                // System.Console.WriteLine($"Elapsed time: {stopwatch}");
 
                 continue;
             }
@@ -188,6 +182,9 @@ public class Board(int Size, int WinningCond)
 
     public bool Finished()
     {
+        // Stopwatch stopwatch = new();
+        // stopwatch.Start();
+
         bool won = false;
 
         for (int y = 0; y + WinningCond <= Size; y++)
@@ -203,6 +200,9 @@ public class Board(int Size, int WinningCond)
             Drawn = true;
             return true;
         }
+
+        // stopwatch.Stop();
+        // Console.WriteLine($"Elapsed time: {stopwatch}");
 
         return won;
     }
